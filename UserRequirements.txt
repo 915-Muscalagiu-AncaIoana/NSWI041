@@ -1,0 +1,16 @@
+STEPS :
+ADMISSION PART
+ - create new application -> creates an account for you
+ - login account
+ - choose admission exam ( mathematics or computer science / options of study programmes)
+ - pay admission fee + recieve payment verification
+ - recieve data about exam ( place and hour )
+ - check the results of the exam
+ - accept / decline admission before deadline
+
+RESULTS PART 
+- check for course the grade for seminar / exam
+- record result of seminars ( credits and grade )
+- record result of final exam
+- record result of defenses diploma 
+- create statistical report on student success rate  
