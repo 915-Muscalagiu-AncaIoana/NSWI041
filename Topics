@@ -1,0 +1,15 @@
+Module Students
+The module Students is used to manage admission procedures, enrollment of 
+students in their studies at the university, their completed courses with 
+the results in that courses and results of their final state exams. 
+The module enables to create individual admission procedures for individual
+ study programs and years and to record the results of the admission 
+ procedures for individual participants. For admitted students, 
+ it is then necessary to record whether they enrolled to the studies 
+ by enrolling before the start of the first academic year. 
+ During the studies, the results of seminars and exams and credits 
+ obtained for individual successfully completed courses are recorded. 
+ Furthermore, the module enables to manage results of defenses of diploma 
+ and bachelor's theses and state final examinations. 
+ The module also allows users to create statistical reports on the student 
+ success rate in each year.

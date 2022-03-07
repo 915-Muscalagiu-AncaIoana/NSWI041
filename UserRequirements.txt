@@ -14,3 +14,4 @@ RESULTS PART
 - record result of final exam
 - record result of defenses diploma 
 - create statistical report on student success rate  
+
