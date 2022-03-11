@@ -1,5 +1,5 @@
 # Student information system - Students
-
+  The Students Module handles admission into the university and grading of subjects, final exams and bachelor theses.
 
 ## Functional Requirements
 
@@ -26,19 +26,19 @@
 
 ##### Enrolee
 
-[*Actor description*]
+  The Enrolee applies to the university and recieves credentials for his new account. Using the account, he can choose the study program he wants to apply for and recieves the date and place of the admission exam. After taking the exam, he will be able to view his results and choose whether to enroll to the university or to decline his place. 
 
 ##### Student
 
-[*Actor description*]
+The Student can view his results at subjects and final exams given by teachers. He can also record his bachelor thesis project and view the grade for it which is recorded by another teacher.
 
 ##### Administartor
 
-[*Actor description*]
+The Administartor manages the study programs of the university and records the status of a student (if he accepted/declined his place before/after the deadline). He creates statisticals reports on the student success rate in each year.
 
 ##### Teacher
 
-[*Actor description*]
+The Teacher records the grading for his subjects and for the final exams taken by students. He can record the subject of the bachelor theses of the students he mentors and he can view their bachelor thesis projects.
 
 #### Use cases
 
@@ -49,6 +49,8 @@
 ```plantuml
 @startuml
 left to right direction
+
+skinparam actorStyle awesome
 actor Enrolee as e
 actor Administartor as a
 actor Student as s
@@ -65,7 +67,7 @@ package Admission {
   usecase "Manage study programs" as UC4
   usecase "Check exam results" as UC5
   usecase "Record student status" as UC6
-  usecase "Accept/decline offer" as UC7
+  usecase "Accept/decline place" as UC7
 }
 
 e --> UC1
@@ -108,6 +110,28 @@ Follow https://plantuml.com/
 
 [*Describe the diagram in a short paragraph. Describe each use case from the diaram in the detail from the lecture in a separate subsection.*]
 
-##### [*Use case title*]
+##### Register
+
+##### Create Account
+
+##### Choose Study Program
+
+##### Check Exam Results
+
+##### Accept/Decline Place
+
+##### Record student status
+
+##### Manage Study Program
+
+##### Create Statistic Report
+
+##### View Subject Results
+
+##### Record Subject Results
+
+##### Record Bachelor Thesis Project
+
+##### View Bachelor Thesis
 
 [*Use case description in the structure from the lecture.*]
