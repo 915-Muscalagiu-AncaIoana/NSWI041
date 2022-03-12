@@ -32,7 +32,7 @@
 
 The Student can view his results at subjects and final exams given by teachers. He can also record his bachelor thesis project and view the grade for it which is recorded by another teacher.
 
-##### Administartor
+##### Administrator
 
 The Administartor manages the study programs of the university and records the status of a student (if he accepted/declined his place before/after the deadline). He creates statisticals reports on the student success rate in each year.
 
@@ -52,14 +52,11 @@ left to right direction
 
 skinparam actorStyle awesome
 actor Enrolee as e
-actor Administartor as a
+actor Administrator as a
 actor Student as s
 actor Teacher as t
 
-' package Professional {
-'   actor Chef as c
-'   actor "Food Critic" as fc
-' }
+
 package Admission {
   usecase "Register" as UC1
   usecase "Create Account" as UC2
