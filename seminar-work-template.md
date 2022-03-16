@@ -81,7 +81,7 @@ package Results {
   usecase "View subject results" as UC8
   usecase "Record subject results" as UC9
   usecase "View final exam results" as UC10
-  usecase "Record subject results" as UC11
+  usecase "Record final exam results" as UC11
   usecase "Record bachelor thesis project" as UC12
   usecase "View bachelor thesis" as UC13
 }
