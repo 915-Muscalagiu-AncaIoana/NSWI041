@@ -184,11 +184,83 @@ Follow https://plantuml.com/
 ##### Create Statistic Report
 
 ##### View Subject Results
+###### Starting situation
+When students have added a subject, they must be able to follow how successful they are. 
+
+###### Normal
+1. Students logs in to his account.
+2. Students should see a list of subjects they're enrolled in, primary for the current semester. Also, should be an option to filter results, for previous semesters.  
+3. Students choose the subject and see a status. There should be 3 possible final states : 
+-final grade - in case the subject is finished (doesn't matter how successful, it includes marks from 4 to 1);
+-final status - in the case when the subject doesn't have a numeric mark. (Zapocet);
+-in progress - when subjects are not finished yet.
+ 
+###### What can go wrong
+1. If students see other than enrolled subjects.
+2. If students can edit results.
+
+###### System state on completion
+1. Students see a list of enrolled subjects and their status.
 
 ##### Record Subject Results
+###### Starting situation
+Teachers must be able to finish the course in a system. Usually, it means to grade his students and switch subject status from "in progress" to "finished". When the subject is finished it should be graded.
+
+###### Normal
+1. Teacher logs in to his account.
+2. Teachers should see a list of subjects they're supervising in the current semester. 
+3. Teachers choose the subject and edit a status. There should be 3 possible final states : 
+-final grade - in case the subject is finished (doesn't matter how successful, it includes marks from 4 to 1);
+-final status - in the case when the subject doesn't have a numeric mark. (Zapocet);
+-in progress - when subjects are not finished yet.
+4. Teachers see how many attempts students got.
+ 
+###### What can go wrong
+1. If teachers see other than supervised subjects.
+2. If teachers cant edit results.
+
+###### System state on completion
+1. Teachers see a list of supervised subjects and their status.
 
 ##### Record Bachelor Thesis Project
+###### Starting situation
+The teacher can add and edit a thesis for a bachelor's work.
+The student can enroll himself in the project.
+
+###### Normal
+1. Teacher/Student logs in to his account.
+2. Teachers/Students should see a list of the thesis. It can be a thesis from last year.
+3. Teachers can add/edit/delete the thesis name, description.
+4. Teachers can set restrictions on faculties.
+5. Teachers can see the time, name, faculty of the enrolled student.
+6. Teachers must have an option to approve or decline candidates. 
+7. Teachers can set status, opponent, and graduation date.
+8. Students must have an option to be enrolled in the project, if they pass faculty restrictions and if is a free spot for the project.
+
+###### What can go wrong
+1. If there are more than 1 enrolled student per thesis.
+2. If teachers cant add/edit/delete thesis.
+3. If students can add themselves to the project which is already full.
+4. If students can add/edit/delete thesis.
+
+###### System state on completion
+1. Teachers and students can see the bachelor thesis they currently supervised/enrolled in with all additional information.
 
 ##### View Bachelor Thesis
+###### Starting situation
+The teacher can review submitted by student bachelor work.
+
+###### Normal
+1. Teacher should see the document, student information, and the date and time of the submission.
+2. Teacher can add deadlines for submitting. 
+3. Teacher cant edit the submitted document.
+4. Teacher can approve or decline submitted work.
+
+###### What can go wrong
+1. If work were submitted after the deadline.
+2. If students can edit date, time, deadlines. 
+
+###### System state on completion
+1. Teachers can review students' bachelor thesis projects.
 
 [*Use case description in the structure from the lecture.*]
