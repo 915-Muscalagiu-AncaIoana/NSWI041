@@ -42,9 +42,6 @@ The Teacher records the grading for his subjects and for the final exams taken b
 
 #### Use cases
 
-[*Document here all use cases. Create a subsection for each use case diagram. If you have only one use case diagram, you do not need a special subsection*]
-
-[*Use case diagram in PlantUML*]
 
 ```plantuml
 @startuml
@@ -96,14 +93,6 @@ UC13 <-- t
 @enduml
 ```
 
-To be able to embed PlantUML diagrams to Markdown code with previews in VSCode you need
-* Markdown All in One extension
-* PlantUML extension
-* Mardown Plantuml Preview extension
-
-Follow https://plantuml.com/
-
-[*Describe the diagram in a short paragraph. Describe each use case from the diaram in the detail from the lecture in a separate subsection.*]
 
 ##### Register
 
@@ -341,5 +330,3 @@ The teacher can review submitted by student bachelor work.
 
 ###### System state on completion
 1. Teachers can review students' bachelor thesis projects.
-
-[*Use case description in the structure from the lecture.*]
