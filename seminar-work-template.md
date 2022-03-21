@@ -218,42 +218,44 @@ UC13 <-- t
 ##### View Subject Results
 
 ###### Starting situation
-When students have added a subject, they must be able to follow how successful they are. 
+When students have added a subject, they must be able to follow how successful they are. Students logs in to his account.
 
 ###### Normal
-1. Students logs in to his account.
-2. Students should see a list of subjects they're enrolled in, primary for the current semester. Also, should be an option to filter results, for previous semesters.  
-3. Students choose the subject and see a status. There should be 3 possible final states : 
--final grade - in case the subject is finished (doesn't matter how successful, it includes marks from 4 to 1);
--final status - in the case when the subject doesn't have a numeric mark. (Zapocet);
--in progress - when subjects are not finished yet.
- 
-###### What can go wrong
-1. If students see other than enrolled subjects.
-2. If students can edit results.
+1. Students should see a loading page with different sections. One of the sections is "Subjects". 
+2. Students enter the "Subject" section and click on the "Enrolled subjects" section.
+3. The system should generate by default a table of subjects for the current semester.
+Also, there is supposed to be an option to generate a table of subjects from previous semesters.
+4. Students see a table with columns: "Subject", "Year", "Semester", "Status", "Grade".
+5. The "Subject" column includes code and text representation of a subject.
+The "Year" column by default shows the current year.
+The "Semester" column shows Summer/Winter semesters.
+The "Status" column describes if the subject is finished or in progress. 
+The "Grade" column can have Zapocet/4/3/2/1 values.
 
 ###### System state on completion
-1. Students see a list of enrolled subjects and their status.
+1. Students see a table of enrolled subjects and their status with grades.
 
 ##### Record Subject Results
 ###### Starting situation
-Teachers must be able to finish the course in a system. Usually, it means to grade his students and switch subject status from "in progress" to "finished". When the subject is finished it should be graded.
+Teachers must be able to finish the course in a system. Usually, it means to grade his students and when the subject is 
+finished it should be graded. The teacher logs in to his account.
 
 ###### Normal
-1. Teacher logs in to his account.
-2. Teachers should see a list of subjects they're supervising in the current semester. 
-3. Teachers choose the subject and edit a status. There should be 3 possible final states : 
--final grade - in case the subject is finished (doesn't matter how successful, it includes marks from 4 to 1);
--final status - in the case when the subject doesn't have a numeric mark. (Zapocet);
--in progress - when subjects are not finished yet.
-4. Teachers see how many attempts students got.
- 
-###### What can go wrong
-1. If teachers see other than supervised subjects.
-2. If teachers cant edit results.
+1. Teachers should see a loading page with different sections. One of the sections is "Subjects". 
+2. Teachers enter the "Subject" section and click on the "Supervised subjects" section.
+3. The system should generate by default a list of subjects for the current semester.
+Also, there is supposed to be an option to generate a list of subjects from previous semesters.
+4. After clicking on subject teachers see a table with columns: "Subject", "Year", "Semester", "Status", "Grade", "Attempts" and with students enrolled 
+5. The "Subject" column includes code and text representation of a subject.
+The "Year" column by default shows the current year.
+The "Semester" column can have values: Summer/Winter semesters.
+The "Status" column can have 2 states: finished/in progress. 
+The "Grade" column can have values: Zapocet/4/3/2/1.
+The "Attempts" column can have values: 1/2/3.
+6. Teachers can write/read any of the rows except 1 row with columns
 
 ###### System state on completion
-1. Teachers see a list of supervised subjects and their status.
+1. Teachers see a table of supervised subjects and their status with grades.
 
 
 ##### View final exam results
@@ -294,9 +296,10 @@ The teacher is able to grade the final exam taken by the students in their final
 ###### Starting situation
 The teacher can add and edit a thesis for a bachelor's work.
 The student can enroll himself in the project.
+Teacher/Student logs in to his account.
 
 ###### Normal
-1. Teacher/Student logs in to his account.
+1. Teacher/Student should see a loading page with different sections. One of the sections is the "Bachelor Thesis Project"
 2. Teachers/Students should see a list of the thesis. It can be a thesis from last year.
 3. Teachers can add/edit/delete the thesis name, description.
 4. Teachers can set restrictions on faculties.
@@ -316,7 +319,8 @@ The student can enroll himself in the project.
 
 ##### View Bachelor Thesis
 ###### Starting situation
-The teacher can review submitted by student bachelor work.
+The teacher can review submitted by student bachelor work. 
+The teacher logs in to his account and pick-up the "Bachelor Thesis Project" section from the main page.
 
 ###### Normal
 1. Teacher should see the document, student information, and the date and time of the submission.
