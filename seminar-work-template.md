@@ -154,14 +154,15 @@ UC13 <-- t
 ##### Check Exam Results
 
 ###### Starting situation
-  The enrolee logs into the account in order to check the results from the exam. Afterwards, he can choose if he wants to continue as a student of the University.
+  The enrolee logs into the account in order to check the results from the exam. 
 
 ###### Normal
-1. The enrolee logs in and the grade from the exam is displayed.
-2. According to his grade and the filtering criteria, the administrator may offer him a place at the University.
-3. If the enrolee receives a place at the University, he will be able to accept or decline his spot until the start of the first academic year.
-4. If the enrolee accepts his place, then he will become a student at the chosen Faculty and be registered in the Student Information System.
-5. If the enrolee does not receive a place at the University or if he declines his spot, after a period of time his account will be closed.
+1. The enrolee is notified that the exam results have been published.
+2. The enrolee opens his application and checks his grade.
+3. According to his grade and the filtering criteria, the administrator may offer him a place at the University.
+4. If the enrolee receives a place at the University, he will be able to accept or decline his spot until the start of the first academic year.
+5. If the enrolee accepts his place, then he will become a student at the chosen Faculty and be registered in the Student Information System.
+6. If the enrolee does not receive a place at the University or if he declines his spot, after a period of time his account will be closed.
 
 ###### What can go wrong
 1. If the accepted enrolee does not confirm his status until the deadline, his account will be closed.
@@ -173,11 +174,11 @@ UC13 <-- t
 ##### Record student status
 
 ###### Starting situation
-  After the admission exams period ends, the administrator checks all the results and offers places at the university, based on the filtering criteria established by each faculty.
+  At the end of the admission period the administrator receives the results from the exams.
 
 ###### Normal
-1. The administrator receives the reults from the admission exams.
-2. The administrator filters all the enrolees, based on their grade and the number of free spots.
+1. The administrator inserts the exam results of all enrollees in the system.
+2. The administator uses the system to filter all the enrollees, based on their grade and the number of free spots.
 3. The administrator sends the offers to the enrolees that have received a spot at the University.
 
 ###### System state on completion
@@ -187,29 +188,25 @@ UC13 <-- t
 ##### Manage Study Program
 
 ###### Starting situation
-  When the University decides to modify a certain study programme or a course, the administrator will reflect the changes in the system.
+  When the University decides to modify a certain study programme or a course the administrator is notified about the changes.
 
 ###### Normal
-1. The administrator receives the changes made by the University.
+1. The administrator suspends the use of the system while the updates are being made. The users will get notified that the system is under maintenance.  
 2. The administrator updates each study programme or course according to the given changes.
-3. The administrator notifies the students enroled in the study programme or course to be changed, before the start of the semester.
-
-###### What can go wrong
-1. If the University decides to make some changes in the middle of the semester, they will be taken into consideration only in the next semester.
+3. After the updates, the system becomes available for use and the students enrolled in the modified study programme/course are notified.
 
 ###### System state on completion
-1.  The changes will be registered in the system.
+1. The changes will be registered in the system.
 
 
 ##### Create Statistic Report
 
 ###### Starting situation
-  After the exam session ends, the administrator creates a statistic report for each course.
+  After the exam session ends, the administrator has access to the final report of all students.
 
 ###### Normal
-1. The administrator has access to the final report of each student.
-2. The administrator centralizes all the exam results from each course and places all of them in one file.
-3. The administrator creates each course report based on the rate of success.
+1. The administrator uses the system in order to create each course report based on the rate of success.
+2. The administator publishes the reports on the page of each respective course. 
 
 ###### System state on completion
 1.  Each course will receive a statistic report which will be displayed on the course's page.
@@ -261,12 +258,11 @@ The "Attempts" column can have values: 1/2/3.
 ##### View final exam results
 
 ###### Starting situation
-  In the final year of a study programme, each student must take a final exam containg the most important subjects from his Faculty. He must be able to view his results from this exam.
+  The final exam session has ended. The students in their final year log into their accounts.  
 
 ###### Normal
-1. Students logs into his account.
-2. Students should see his final result in a separate section, which summarizes his progress during the study programme.  
-3. If the grade is not high enough, the student must be notified to retake the exam.
+1. The student should see his final result in a separate section, which summarizes his progress during the study programme.  
+2. If the grade is not high enough, the student must be notified to retake the exam.
 
 ###### System state on completion
 1. Students see their result from the final exam.
@@ -275,12 +271,11 @@ The "Attempts" column can have values: 1/2/3.
 ##### Record final exam results
 
 ###### Starting situation
-The teacher is able to grade the final exam taken by the students in their final year.
+The final exam session has ended. The teachers responsible of the final exams log into their accounts.  
 
 ###### Normal
-1. Teacher logs in to his account.
-2. Teachers should see a list of the students that took the final exam and their work on it.
-3. Teachers grade each final exam. There should be 2 possible final states : 
+1. Teachers should see a list of the students that took the final exam and their work on it.
+2. Teachers grade each final exam. There should be 2 possible final states : 
 - passed -> if the student solved correctly more than 50% of the exam
 - failed -> if the student did not attend the exam or did not get the minimum required points
 4. Teachers make the grades publicly available.
