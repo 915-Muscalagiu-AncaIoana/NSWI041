@@ -1,0 +1,67 @@
+@startuml Alex
+
+title "Teacher - Thesis Project - Result Class Diagram"
+
+class "Teacher" as Object\Teacher {
+    **id**: int[190]
+    name: varchar[190]
+    surname: varchar[190]
+    faculty: varchar[190]
+    department: varchar[190]
+    office: varchar[190]
+    email: varchar[190]
+    {method} ShowMainPage()
+    {method} AddSubject()
+    {method} EditSubject()
+    {method} ChangeSemester()
+    {method} ShowEnrolledStudents()
+  
+}
+
+
+class "Thesis Project" as Object\TP {
+    **id**: int[190]
+    name: varchar[190]
+    year of assignment: varchar[30]
+    year of defence: varchar[30]
+    type of assignment: varchar[190]
+    superviser: varchar[190] 
+    announced: varchar[30]
+    assigned: varchar[190]
+    department:varchar[190]
+    {method} ShowThesis()
+    {method} AddThesis()
+    {method} EditThesis()
+    {method} AddAuthor()
+    {method} EditAuthor()
+    {method} AddYearOfDefence()
+    {method} EditYearOfDefence()
+}
+
+class "Result" as Object\Result {
+    **id**: int[190]
+    type: varchar[190]
+    attempt: int[1]
+    results: varchar[1]
+    date: varchar[30]
+    examiner: varchar[30]
+    type: varchar[30]
+    ETC/Credits: int[1]
+    Passed: varchar[30]
+    {method} ShowSubject()
+    {method} AddGrade()
+    {method} EditGrade()
+    {method} AddDateOfExamination()
+    {method} EditDateOfExamination()
+    {method} AddAttempt()
+    {method} EditAttempt()
+    {method} AddPassed()
+    {method} EditPassed()
+}
+
+Object\Teacher  --- "0..*" Object\TP : Thesis >
+Object\Teacher "0..1" ---  Object\TP : Supervisor <
+Object\TP  --- "0..1" Object\Result : ThesisGrade >
+
+
+@enduml
