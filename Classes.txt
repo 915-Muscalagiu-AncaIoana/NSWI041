@@ -1,0 +1,12 @@
+- Enrolee - ioana
+- Student - simo
+- Teacher - alex
+- Administator - anca
+- Subject - 
+- Exam  -> Admission Exam - ioana
+        -> Final Exam
+- Study Programme - anca
+- Application - ioana
+- Faculty - anca
+- ThesisProject - alex
+- Result - alex
