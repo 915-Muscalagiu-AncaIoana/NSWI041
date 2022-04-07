@@ -1,0 +1,28 @@
+@startuml
+partition Teacher {
+    (*top) -right-> "Choose subject"
+    -down-> "Choose student"
+    -right-> "Enter results"
+}
+
+partition System {
+    -right-> "Authorize person"
+    if "" then
+         -left->[Not Authorized Person]"Enter results"
+    else
+        ->[Authorized Person] "Access granted"
+    endif
+    -down-> "Enter subject results"
+    if "" then
+         -down->[Non-valid mark]"Enter subject results"
+    else
+        ->[Valid mark] "Generate sheets"
+    endif
+    -down-> "Publish sheets"
+}
+
+partition Student {
+  -down-> "View results"
+  -down->(*top)
+}
+@enduml
