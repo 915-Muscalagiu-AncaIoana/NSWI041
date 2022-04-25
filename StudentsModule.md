@@ -97,13 +97,14 @@ UC13 <-- t
 ##### Register
 
 ###### Starting situation
-  The enrolee wants to apply for a place at the university. He has filled out the form about his personal data and registers into the student management system.
+  The enrolee wants to apply for a place at the university. 
 
 ###### Normal
 1. The enrolee completes the form containing his personal information: first and last name, birth date, personal identification number, email, phone number and address.
 2.  The Student Management System checks if all mandatory fields are filled in.
-3. The Student Management System checks if the format of the personal idntification number, email and phone number are valid.
+3. The Student Management System checks if the format of the birth date, personal idntification number, email and phone number are valid.
 4. The form containing the personal data of the enrolee is submitted to the system.
+5. The enrolee is notified upon his successful registration. 
 
 ###### What can go wrong
 1. Not all the mandatory fields in the form are filled in by the enrolee. In this case, the enrolee must complete all of them.
@@ -112,6 +113,41 @@ UC13 <-- t
 ###### System state on completion
 1. A valid form containg the personal data of the enrolee is submitted and registered in the system.
 2. Non-valid filled forms are rejected and the enrolee is notified about the error.
+
+###### Test case 01
+####### Setup
+   - Open the registration form available on the university website 
+####### Steps
+    - Fill in personal information
+        - First name : Flavia
+        - Last name : Muresan
+        - Birth date : 01.07.2001
+        - Personal Identification Number : 6008283344
+        - Email : flavia.muresan@gmail.com
+        - Phone Number : +407553323421
+        - Address : Korunovacni, Praha 7
+    - Submit application form
+        - [Assertion] The system does not report any missing mandatory field.
+        - [Assertion] The system does not report any invalid format of the fields.
+        - [Assertion] The confirmation of the successful registration is recieved 
+
+###### Test case 02
+####### Setup
+   - Open the registration form available on the university website 
+####### Steps
+     - Fill in personal information
+        - First name : 
+        - Last name : 
+        - Birth date : 13.13.2000 
+        - Personal Identification Number :
+        - Email : flavia.muresan
+        - Phone Number : 
+        - Address :  
+     - Submit application form
+         - [Assertion] The system reports missing mandatory fields first name, last name, personal ID, phone number and address.
+         - [Assertion] The system reports invalid format of the birth date and email.
+         - [Assertion] The notification regarding the errors is recieved. 
+     
 
 ###### Activity Diagram
 
@@ -194,6 +230,30 @@ partition Enrollee {
 
 ###### System state on completion
 1. The application of the enrolee is registered.
+   
+###### Test case 01
+####### Setup
+   - Login into the enrollee account
+   - Open the registration section
+####### Steps
+    - Choose desired programme from drop-down list
+        - Faculty : Faculty of Mathematics and Physics
+        - Study programme : Bachelor of Computer Science
+    - Submit application
+        - [Assertion] The system does not report any missing mandatory field
+        - [Assertion] The confirmation of the successful registration and the details about the exam are recieved 
+
+###### Test case 02
+####### Setup
+   - Login into the enrollee account
+   - Open the registration section 
+####### Steps
+     - Choose desired programme from drop-down list
+        - Faculty : 
+        - Study programme : 
+     - Submit application
+         - [Assertion] The system reports missing mandatory fields Faculty and Study programme
+        - [Assertion] The notification regarding the errors is recieved and there is no email sent with the details about the exam
 
 ###### Activity Diagram
 

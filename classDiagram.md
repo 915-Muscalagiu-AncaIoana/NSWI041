@@ -113,6 +113,7 @@ RegularExam "1" -- "1" Result
 FinalExam "1" -- "many" Result
 ThesisProject "1" -- "many" Result 
 Result "1" -- "1" Teacher
+ThesisProject "1" -- "1" Teacher
 Application "1" -- "1" Enrollee
 Application "1" -- "1" AdmissionExam
 Student "1" -- "1" Account
