@@ -115,9 +115,9 @@ UC13 <-- t
 2. Non-valid filled forms are rejected and the enrolee is notified about the error.
 
 ###### Test case 01
-####### Setup
+###### Setup
    - Open the registration form available on the university website 
-####### Steps
+###### Steps
     - Fill in personal information
         - First name : Flavia
         - Last name : Muresan
@@ -132,9 +132,9 @@ UC13 <-- t
         - [Assertion] The confirmation of the successful registration is recieved 
 
 ###### Test case 02
-####### Setup
+###### Setup
    - Open the registration form available on the university website 
-####### Steps
+###### Steps
      - Fill in personal information
         - First name : 
         - Last name : 
@@ -232,10 +232,10 @@ partition Enrollee {
 1. The application of the enrolee is registered.
    
 ###### Test case 01
-####### Setup
+###### Setup
    - Login into the enrollee account
    - Open the registration section
-####### Steps
+###### Steps
     - Choose desired programme from drop-down list
         - Faculty : Faculty of Mathematics and Physics
         - Study programme : Bachelor of Computer Science
@@ -244,10 +244,10 @@ partition Enrollee {
         - [Assertion] The confirmation of the successful registration and the details about the exam are recieved 
 
 ###### Test case 02
-####### Setup
+###### Setup
    - Login into the enrollee account
    - Open the registration section 
-####### Steps
+###### Steps
      - Choose desired programme from drop-down list
         - Faculty : 
         - Study programme : 
