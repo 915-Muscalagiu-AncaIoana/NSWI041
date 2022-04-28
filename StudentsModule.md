@@ -213,6 +213,86 @@ partition Enrollee {
 }
 @enduml
 
+###### Test case 01
+
+###### Setup
+
+  - The personal information is already in the system
+
+###### Steps:
+
+  - Retrieve personal information:
+
+      - First name : Flavia
+
+      - Last name : Muresan
+
+      - Birth date : 01.07.2001
+
+      - Personal Identification Number: 6010701333421
+
+      - Email : flavia.muresan@gmail.com
+
+      - Phone Number : +407553323421
+
+      - Address : Korunovacni, Praha 7
+
+  - Generate username:
+
+      - [Assertion] The username is unique
+
+  - An account with username and password is generated
+
+  - Credentials are sent via email
+
+      - [Assertion] The confirmation that the email was sent is received
+
+
+
+
+###### Test case 02
+
+###### Setup
+
+  - There is already a person named Flavia Muresan in the system
+
+  - The personal information of the new enrollee is already submitted
+
+
+
+###### Steps:
+
+  - Retrieve personal information of the new enrollee:
+
+      - First name : Flavia
+
+      - Last name : Muresan
+
+      - Birth date : 09.11.2001
+
+      - Personal Identification Number: 6011109330567
+
+      - Email : flavia_muresan01@gmail.com
+
+      - Phone Number : +40745678900
+
+      - Address : Mala Strana, Praha 1
+
+  - Generate username:
+
+      - [Assertion] The username is not unique
+
+  - Generate username with distinctive number
+
+      - [Assertion] The username is unique
+
+  - An account with username and password is generated
+
+  - Credentials are sent via email
+
+       - [Assertion] The confirmation that the email was sent is received
+
+
 ##### Choose Study Program
 
 ###### Starting situation
