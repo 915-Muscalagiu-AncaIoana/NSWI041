@@ -385,6 +385,49 @@ The "Attempts" column can have values: 1/2/3.
 ###### System state on completion
 1. Teachers see a table of supervised subjects and their status with grades.
 
+ 
+###### Test case 01 - Record Subject Results(Correct subject)
+
+###### Setup
+- Login into the teacher account
+- Open the supervised subject section
+- Filter for the current semester
+
+###### Steps
+- Choose the supervised subjects
+  - [Assertion] The system does not report any access errors 
+  - [Assertion] The system shows a complete list of supervised subjects
+- Choose an enrolled student
+  - [Assertion] The system shows the currently enrolled students
+- Enter result
+  - [Assertion] The system does not report any problem/error with the grade
+- Generate sheets
+  - [Assertion] The system represent updated information about the subject
+- Publish sheets
+  - [Asseertion] Correct grade can be viewed by students and the teacher
+
+ 
+ 
+###### Test case 02 - Record Subject Results (Incorrect subject)
+###### Setup
+- Login into the teacher account
+- Open the all subject section
+- Filter for the current semester
+
+###### Steps:
+- Choose any subjects
+  - [Assertion] The system does not report any access error 
+  - [Assertion] The system shows a complete list of all subjects
+- Choose an enrolled student
+  - [Assertion] The system shows an error, access forbidden 
+- Enter result
+  - [Assertion] The system can show an error connected to access or/and entered grade
+- Generate sheets
+  - [Assertion] The system represent previous information about the subject and result, any changes are not saved
+- Publish sheets
+  - [Asseertion] Last system approved grade can be viewed by students and the teacher
+
+
 ###### Activity Diagram
 
 @startuml alexActivityDiagram
